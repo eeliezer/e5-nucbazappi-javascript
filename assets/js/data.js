@@ -12,7 +12,7 @@ class Productos
   }
 }
 
-// Array de Pizzas
+// Array de Productos
 const productosLista = [];
 
 productosLista.push({pizzas: [], hamburguesas: [], napapuki: [], wraps: [], mexicanFood: [], batidos: []});
