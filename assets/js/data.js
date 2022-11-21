@@ -1,41 +1,173 @@
-//  Clase constructor de Productos
-class Productos
-{
-  constructor(id, nombre, ingredientes,precio,imagen, popular)
+
+listadoDeProductos = [
   {
-    this.id = id;
-    this.nombre = nombre;
-    this.ingredientes = ingredientes;
-    this.precio = precio;
-    this.imagen = imagen;
-    this.popular = popular;
-  }
-}
-
-// Array de Productos
-const productosLista = [];
-
-productosLista.push({pizzas: [], hamburguesas: [], napapuki: [], wraps: [], mexicanFood: [], batidos: []});
-
-//  Crear un nuevo objeto desde la clase Productos y la agrega en el array de productosLista.
-productosLista[0].pizzas.push( new Productos( 1, 'Muzzarella', ["Salsa de Tomate", "Queso Muzzarella"], 500, "./assets/img/Pizza-Muzzarella-300x300.jpg", 88 ) );
-productosLista[0].pizzas.push( new Productos( 2, 'Calabresa', ["Salsa de Tomate", "Queso Muzzarella", "Calabresa"], 1000, "./assets/img/Pizza-Calabresa-300x300.jpg", 45 ) );
-productosLista[0].pizzas.push( new Productos( 3, 'Jamón y Morrón', ["Salsa de Tomate", "Queso Muzzarella", "Jamón", "Morrón"], 650, "./assets/img/Pizza-de-Jamón-y-Morrón--300x300.jpg", 90 ) );
-productosLista[0].pizzas.push( new Productos( 4, 'Jamón y Tomate', ["Salsa de Tomate", "Queso Muzzarella", "Tomate", "Jamón"], 750,  "./assets/img/Pizza-de-Jamón-y-Tomate--300x300.jpg", 50 ) );
-productosLista[0].pizzas.push( new Productos( 5, 'Palmito', ["Salsa de Tomate", "Queso Muzzarella", "Palmito"], 550, "./assets/img/Pizza-Muzzarella-300x300.jpg", 30 ) );
-productosLista[0].pizzas.push( new Productos( 6, 'Fugazzeta', ["Queso Muzzarella", "Cebolla Caramelizada"], 950, "./assets/img/Pizza-Fugazzeta--300x300.jpg", 85 ) );
-productosLista[0].pizzas.push( new Productos( 7, 'Pizza Napolitana', ["Salsa de Tomate", "Queso Muzzarella", "Aceitunas", "Tomates"], 800, "./assets/img/Pizza-Napolitana--300x300.jpg", 100 ) );
-productosLista[0].pizzas.push( new Productos( 8, 'Panceta', ["Salsa de Tomate", "Queso Muzzarella", "Panceta", "Aceitunas"], 1000, "./assets/img/Pizza-Panceta--300x300.jpg", 95 ) );
-productosLista[0].pizzas.push( new Productos( 9, 'Roquefort',  ["Salsa de Tomate", "Queso Muzzarella", "Roquefort", "Aceitunas"], 850, "./assets/img/Pizza-Roquefort--300x300.jpg", 70 ) );
-productosLista[0].pizzas.push( new Productos( 10, 'Provolone', ["Salsa de Tomate", "Queso Muzzarella", "Provolone", "Aceitunas"], 900, "./assets/img/Pizza-Provolone-300x300.jpg", 60 ) );
-productosLista[0].pizzas.push( new Productos( 11, 'Super Calabresa', ["Salsa de Tomate", "Queso Muzzarella", "Calabresa", "Aceitunas Negras"], 1550, "./assets/img/Pizza-Super-Calabresa--300x300.jpg", 80 ) );
-productosLista[0].hamburguesas.push( new Productos( 12 , 'Hamburguesas de Carne', ['Pan', 'Carne', 'Rodajas de tomates', 'Lechuga', 'Queso'], 1200, "./assets/img/Hamburguesa-de-Carne--1104x704.jpg", 92) );
-productosLista[0].hamburguesas.push( new Productos( 13 , 'Hamburguesas de Pollo', ['Pan', 'Pollo', 'Rodajas de tomates', 'Lechuga',  'Cebolla'], 1200, "./assets/img/Hamburguesa-de-Pollo--688x493.jpg", 81) );
-productosLista[0].hamburguesas.push( new Productos( 14 , 'Hamburguesas de Vegana', ['Pan', 'Zeitan', 'Rodajas de tomates', 'Lechuga'], 1200, "./assets/img/Hamburguesa-Vegana--750x497.jpg", 81) );
-productosLista[0].napapuki.push( new Productos( 15 , 'Papas fritas', ['Papas'], 400, "./assets/img/Papas-Fritas--232x300.jpg", 89) );
-productosLista[0].wraps.push( new Productos( 16 , 'Wraps de Carne', ['Fajitas', 'Carne', 'Tomates', 'Cebolla', 'Salsa Varias', 'Queso'], 900, "./assets/img/Wrap-de-Carne--600x600.jpg", 75) );
-productosLista[0].wraps.push( new Productos( 17 , 'Wraps de Pollo', ['Fajitas', 'Pollo', 'Tomates', 'Cebolla', 'Salsa Varias'], 790, "./assets/img/Wrap-de-Pollo--750x346.jpg", 62) );
-productosLista[0].mexicanFood.push( new Productos( 19 , 'Tamales', ['Maiz', 'Carne'], 990, "./assets/img/Tamales--500x375.jpg", 94) );
-productosLista[0].batidos.push( new Productos( 20 , 'Batido de Banana', ['Leche', 'Banana', 'Azucar', 'Agua'], 500, "./assets/img/Batido-de-Banana--1194x674.jpg", 93) );
-productosLista[0].batidos.push( new Productos( 21 , 'Batido de Frutilla', ['Leche', 'Frutilla', 'Azucar', 'Agua'], 450, "./assets/img/Batido-de-Frutilla--600x450.jpg", 81) );
-productosLista[0].batidos.push( new Productos( 22 , 'Batido de Uva', ['Leche', 'Uva', 'Azucar', 'Agua'], 450, "./assets/img/Batido-de-Uva--1000x664.jpg", 77) );
+    id: 1,
+    nombre: "Muzzarella",
+    ingredientes: ["Salsa de Tomate Queso Muzzarella"],
+    precio:500,
+    imagen:"./assets/img/Pizza-Muzzarella-300x300.jpg",
+    popular: 100,
+    categoria: "pizzas",
+  },
+  {
+    id: 2,
+    nombre:"Calabresa",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Calabresa"],
+    imagen:"./assets/img/Pizza-Calabresa-300x300.jpg",
+    precio: 1000,
+    popular:45,
+    categoria:"pizzas",
+  },{
+    id: 3,
+    nombre: "Jamón y Morrón",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Jamón", "Morrón"],
+    precio: 650,
+    imagen: "./assets/img/Pizza-de-Jamón-y-Morrón--300x300.jpg",
+    popular: 90,
+    categoria: "pizzas",
+  },{
+    id: 4,  
+    nombre:"Jamón y Tomate",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Tomate", "Jamón"],
+    precio:750,
+    imagen: "./assets/img/Pizza-de-Jamón-y-Tomate--300x300.jpg",
+    popular: 50,
+    categoria: "pizzas",
+  },{
+    id: 5,
+    nombre: "Palmitos", 
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Palmito"],
+    precio: 850,
+    imagen:"./assets/img/Pizza-Muzzarella-300x300.jpg",
+    popular: 30,
+    categoria: "pizzas",
+  },{
+    id:6,
+    nombre: "Fugazzeta",
+    ingredientes:["Queso Muzzarella", "Cebolla Caramelizada"],
+    precio: 950,
+    imagen:"./assets/img/Pizza-Fugazzeta--300x300.jpg",
+    popular: 85,
+    categoria:"pizzas",
+  },{
+    id: 7,
+    nombre: "Pizza Napolitana",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Aceitunas", "Tomates"],
+    precio: 800, 
+    imagen:"./assets/img/Pizza-Napolitana--300x300.jpg",
+    popular: 100,
+    categoria:"pizzas",
+  },{
+    id:8,
+    nombre: "Panceta",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Panceta", "Aceitunas"],
+    precio:1000,
+    imagen:"./assets/img/Pizza-Panceta--300x300.jpg",
+    popular:95,
+    categoria:"pizzas",
+  },{
+    id:9,
+    nombre:"Roquefort",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Roquefort", "Aceitunas"],
+    precio:850,
+    imagen:"./assets/img/Pizza-Roquefort--300x300.jpg",
+    popular:70,
+    categoria:"pizzas",
+  },{
+    id:10,
+    nombre:"Provolone",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Provolone", "Aceitunas"],
+    precio:900,
+    imagen:"./assets/img/Pizza-Provolone-300x300.jpg",
+    popular:60,
+    categoria:"pizzas",
+  },{
+    id:11,
+    nombre: "Super Calabresa",
+    ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Calabresa", "Aceitunas Negras"],
+    precio: 1150,
+    imagen:"./assets/img/Pizza-Super-Calabresa--300x300.jpg",
+    popular: 80,
+    categoria: "pizzas",
+  },{
+    id:12,
+    nombre:"Hamburguesas de Carne",
+    ingredientes:['Pan', 'Carne', 'Rodajas de tomates', 'Lechuga', 'Queso'],
+    precio: 1200,
+    imagen:"./assets/img/Hamburguesa-de-Carne--1104x704.jpg",
+    popular:92,
+    categoria:"hamburguesa",
+  },{
+    id:13,
+    nombre:"Hamburguesas de Pollo",
+    ingredientes:['Pan', 'Pollo', 'Rodajas de tomates', 'Lechuga',  'Cebolla'],
+    precio: 1200,
+    imagen:"./assets/img/Hamburguesa-de-Pollo--688x493.jpg",
+    popular:90,
+    categoria: "hamburguesa",
+  },{
+    id:14,
+    nombre:"Hamburguesas de Vegana",
+    ingredientes:['Pan', 'Zeitan', 'Rodajas de tomates', 'Lechuga'],
+    precio: 1200,
+    imagen:"./assets/img/Hamburguesa-Vegana--750x497.jpg",
+    popular:81,
+    categoria:"hamburguesa",
+  },{
+    id:15,
+    nombre:"Papas fritas",
+    ingredientes:["papas"],
+    precio:400,
+    imagen:"./assets/img/Papas-Fritas--232x300.jpg",
+    popular:100,
+    categoria:"papas fritas",
+  },{
+    id:16,
+    nombre: "Wraps de Carne",
+    ingredientes:['Fajitas', 'Carne', 'Tomates', 'Cebolla', 'Salsa Varias', 'Queso'],
+    precio: 900,
+    imagen:"./assets/img/Wrap-de-Carne--600x600.jpg",
+    popular:75,
+    categoria: "wraps",
+  },{
+    id:17,
+    nombre:"Wraps de Pollo",
+    ingredientes:['Fajitas', 'Pollo', 'Tomates', 'Cebolla', 'Salsa Varias'],
+    precio:790 ,
+    imagen:"./assets/img/Wrap-de-Pollo--750x346.jpg",
+    popular:62,
+    categoria:"wraps",
+  },{
+    id:18,
+    nombre:"Tamales",
+    ingredientes:['Maiz', 'Carne'],
+    precio:990,
+    imagen:"./assets/img/Tamales--500x375.jpg",
+    popular:94,
+    categoria:"tamales",
+  },{
+    id:20,
+    nombre:"Batido de Banana",
+    ingredientes:['Leche', 'Banana', 'Azucar', 'Agua'],
+    precio:500,
+    imagen:"./assets/img/Batido-de-Banana--1194x674.jpg",
+    popular:93,
+    categoria:"batidos",
+  },{
+    id:21,
+    nombre:"Batido de Frutilla",
+    ingredientes:['Leche', 'Frutilla', 'Azucar', 'Agua'],
+    precio:450,
+    imagen:"./assets/img/Batido-de-Frutilla--600x450.jpg",
+    popular:93,
+    categoria:"batidos",
+  },{
+    id:22,
+    nombre:"Batido de Uva",
+    ingredientes:['Leche', 'Uva', 'Azucar', 'Agua'],
+    precio:450,
+    imagen:"./assets/img/Batido-de-Uva--1000x664.jpg",
+    popular:77,
+    categoria:"batidos",
+  },
+]

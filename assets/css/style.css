@@ -99,8 +99,7 @@ h4 {
     font-style: normal;
     font-weight: 700;
     font-size: 66px;
-    
-    color: #FFFFFF;
+    color: var(--color4);
 }
 
 .section-h4-hero {
@@ -113,8 +112,7 @@ h4 {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
-    
-    color: #FFFFFF;
+    color: var(--color4);
 }
 
 .div-img-pizza1 {
@@ -139,8 +137,11 @@ h4 {
 
 .btn-add-hero {
     position: relative;
-    width: 166px;
-    height: 50px;
+    height: 40px;
+    width: 150px;
+    display: grid;
+    place-items: center;
+    border-radius: 15px;
     top: 93px;
     background: linear-gradient(98.81deg, var(--color6) -0.82%, var(--color7) 101.53%);
     box-shadow: 11px 28px 50px rgba(20, 78, 90, 0.2);
@@ -155,7 +156,47 @@ h4 {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+.div-cards-categorias{
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    display: grid;
+    gap: 15px;
+    place-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    word-break:break-all;
+}
 
+.categories-card{
+    width: 147px;
+    height: 171px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    filter: drop-shadow(0px 0px 50px rgba(1, 2, 7, 0.5));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.categories-card:hover{
+    background-color: var(--color2);
+    transition: 0.5s;
+}
+.selected-category{
+    background-color: var(--color4) !important;
+}
+
+.categories-img{
+    width: 80px;
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .section-results{
     position: relative;
     margin: auto;
@@ -166,4 +207,73 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#populares-img{
+    background-image: url("../img/pizza\ 2.png");
+}
+
+#pizzas-img{
+    background-image: url("../img/image34.png");
+}
+
+#hamburguesas-img{
+    background-image: url("../img/burger\ 1.png");
+}
+
+#napapuki-img{
+    background-image: url("../img/fries\ 2.png");
+}
+
+#wraps-img{
+    background-image: url("../img/buritto\ 1.png");
+}
+
+#mexican-food-img{
+    background-image: url("../img/taco\ 1.png");
+}
+
+#batidos-img{
+    background-image: url("../img/float\ 1.png");
+}
+
+.categories-name{
+    color: var(--color4);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.categories-decoration{
+    background: linear-gradient(45deg, var(--yellow), var(--red));
+    height: 3px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.divCatego{
+    width: 95%;
+    height: auto;
+    min-height: 650px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    grid-auto-rows: min-content;
+    gap: 15px;
+
+}
+.producto{
+   
+}
+.producto-detalles{
+    background-color: var(--color5);
+    height: 213px;
+    width: 100%;
+    max-width: 282px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    place-items: center;
+    padding: 15px;
+    gap: 5px;    
+    
 }
