@@ -196,12 +196,12 @@ cargarProductos= (productosElegidos)=> {
         productosElegidos.forEach(producto =>{
         const div = document.createElement('div');
         div.innerHTML =`
-        <div class="productos-detalles">
+        <div class="producto-detalles">
+          <img width="200px" height="150px"class="prodcuto-imagen" src="${producto.imagen}">
             <h3 class="producto-titulo">${producto.nombre}</h3>
-            <img width="200px" height="150px"class="prodcuto-imagen" src="${producto.imagen}">
             <p class="producto-precio">$ ${producto.precio}</p>
             <p class="producto-polularidad">${producto.popular}</p>
-            <button class="btd-add-product" id="${producto.nombre}">Agregar</button>
+            <button class="btn-add-product" id="${producto.nombre}">Agregar</button>
         </div>`
     divCatego.append(div)
     });
