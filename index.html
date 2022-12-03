@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="./assets/img/nucbazappiicon 1.png" />
     <title>NucbaZappi</title>
 </head>
-
 <body class="body-container">
     <header class="header-container" id="header-container">
         <nav class="navBar-list" id="navBar-list">
@@ -21,12 +20,51 @@
                 <ul>
                     <li class="li-container-home" id="li-container-home"> <img src="./assets/img/Home.png" alt="home"
                             class="logo-home"> Home</li>
-                    <li class="li-container-carrito" id="li-container-carrito"><i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+                    <div class="cart-label">
+                        <i class="fa-solid fa-cart-shopping cart-icon">
+                            <div class="cart-bubble">11</div>
+                        </i>
+                    </div>
                     <li class="li-container-user" id="li-container-user"><i class="fa-solid fa-user"></i></li>
                 </ul>
             </div>
+            <div class="overlay"></div>
         </nav>
+        <div class="cart">
+            <button class="close-cart">X</button>
+            <h2 class="title-card">Tu productos</h2>
+            <div class="cart-container">
+<!--                 <div class="cart-item">
+                    <img src="./assets/img/Pizza-Calabresa-300x300.jpg" alt="Item del carrito">
+                    <div class="item-info">
+                        <h5 class="item-cart-title">${NOMBRE}</h5>
+                        <p class="item-description">DESCRIPCION</p>
+                        <span class="item-price">${PRECIO}</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down" data-id="${}">-</span>
+                        <span class="item-count">12</span>
+                        <span class="quantity-handler up" data-id="${}"">+</span>
+                    </div>
+                </div> -->
+            </div>
+                <span class="divider"></span>
+                <div class="cart-subtotal">
+                    <p>Sub-total:</p>
+                    <span class="subtotal">$1500</span>
+                </div>
+                <div class="cart-envio">
+                    <p>Envío:</p>
+                    <p class="signoPeso">$</p><span class="envio">350</span>
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">$1500</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+
+        </div>
     </header>
     <main class="main-section-container">
         <section class="section-hero" id="section-hero">
@@ -82,7 +120,7 @@
                         <div class="categories-decoration"></div>
                     </div>
                 </div>
-                <div class="">
+                <div class="productos-lista">
                     <h3>Los mas populares</h3>
                     <div class="div-populares">
                     <div class="divCatego" id="divCatego"></div></div>
@@ -94,8 +132,8 @@
     <footer class="footer-container">
 
     </footer>
+    <div class="add-modal"></div>
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
