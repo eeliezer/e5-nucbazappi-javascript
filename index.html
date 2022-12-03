@@ -12,7 +12,6 @@
     <link rel="shortcut icon" href="./assets/img/nucbazappiicon 1.png" />
     <title>NucbaZappi</title>
 </head>
-
 <body class="body-container">
     <header class="header-container" id="header-container">
         <nav class="navBar-list" id="navBar-list">
@@ -21,19 +20,58 @@
                 <ul>
                     <li class="li-container-home" id="li-container-home"> <img src="./assets/img/Home.png" alt="home"
                             class="logo-home"> Home</li>
-                    <li class="li-container-carrito" id="li-container-carrito"><i class="fa-solid fa-cart-shopping"></i>
-                    </li>
+                    <div class="cart-label">
+                        <i class="fa-solid fa-cart-shopping cart-icon">
+                            <div class="cart-bubble">11</div>
+                        </i>
+                    </div>
                     <li class="li-container-user" id="li-container-user"><i class="fa-solid fa-user"></i></li>
                 </ul>
             </div>
+            <div class="overlay"></div>
         </nav>
+        <div class="cart">
+            <button class="close-cart">X</button>
+            <h2 class="title-card">Tu productos</h2>
+            <div class="cart-container">
+<!--                 <div class="cart-item">
+                    <img src="./assets/img/Pizza-Calabresa-300x300.jpg" alt="Item del carrito">
+                    <div class="item-info">
+                        <h5 class="item-cart-title">${NOMBRE}</h5>
+                        <p class="item-description">DESCRIPCION</p>
+                        <span class="item-price">${PRECIO}</span>
+                    </div>
+                    <div class="item-handler">
+                        <span class="quantity-handler down" data-id="${}">-</span>
+                        <span class="item-count">12</span>
+                        <span class="quantity-handler up" data-id="${}"">+</span>
+                    </div>
+                </div> -->
+            </div>
+                <span class="divider"></span>
+                <div class="cart-subtotal">
+                    <p>Sub-total:</p>
+                    <span class="subtotal">$1500</span>
+                </div>
+                <div class="cart-envio">
+                    <p>Envío:</p>
+                    <p class="signoPeso">$</p><span class="envio">350</span>
+                </div>
+                <hr>
+                <div class="cart-total">
+                    <p>Total:</p>
+                    <span class="total">$1500</span>
+                </div>
+                <button class="btn-buy">Comprar</button>
+
+        </div>
     </header>
     <main class="main-section-container">
         <section class="section-hero" id="section-hero">
             <div class="div-section-container">
                 <h2 class="section-h2-hero">Si tenes Zappi, tienes Nucba</h2>
                 <h4 class="section-h4-hero">Busca lo que quieras y nucba te quedes sin comida</h4>
-                <button class="btn-add-hero" id="btn-add-her0">Ver mas</button>
+                <a href="#divCatego" class="btn-add-hero" id="btn-add-hero">Ver mas</a>
                 <div class="div-img-pizza1"></div>
                 <div class="div-img-pizza2"></div>
             </div>
@@ -45,18 +83,57 @@
             </div>
             <div class="categorias">
                 <h4>Categorias</h4>
-                <div class="div-cards-categorias"></div>
+                <div class="div-cards-categorias" id="div-cards-categorias" id="todos">
+                    <div class="categories-card" data-filter="more-popular" id="popular">
+                        <div class="categories-img" id="populares-img"></div>
+                        <h4 class="categories-name">Populares</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="pizzas" id="pizzas">
+                        <div class="categories-img" id="pizzas-img"></div>
+                        <h4 class="categories-name">Pizzas</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="hamburguesas" id="hamburguesas">
+                        <div class="categories-img" id="hamburguesas-img"></div>
+                        <h4 class="categories-name">Hamburguesas</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="napapuki" id="papas">
+                        <div class="categories-img" id="napapuki-img"></div>
+                        <h4 class="categories-name">Napapuki</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="wraps" id="wraps">
+                        <div class="categories-img" id="wraps-img"></div>
+                        <h4 class="categories-name">Wraps</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="mexican-food" id="mexican-food">
+                        <div class="categories-img" id="mexican-food-img"></div>
+                        <h4 class="categories-name">Mexican Food</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                    <div class="categories-card" data-filter="batidos" id="batidos">
+                        <div class="categories-img" id="batidos-img"></div>
+                        <h4 class="categories-name">Batidos</h4>
+                        <div class="categories-decoration"></div>
+                    </div>
+                </div>
+                <div class="productos-lista">
+                    <h3>Los mas populares</h3>
+                    <div class="div-populares">
+                    <div class="divCatego" id="divCatego"></div></div>
+                </div>
             </div>
-            <div class="populares">
-                <h3>Los mas populares</h3>
-                <div class="div-cards-populares"></div>
-            </div>
+            
         </section>
     </main>
     <footer class="footer-container">
 
     </footer>
+    <div class="add-modal"></div>
+    <script src="./assets/js/data.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
