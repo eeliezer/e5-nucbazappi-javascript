@@ -33,21 +33,23 @@ saveLocalStorage(ListadoDeProductos);
 // Funcion para inyectar los productos en el html
 
 const cargarProductos= (productosElegidos)=> {
-        divCatego.innerHTML="";
-        
-        productosElegidos.forEach(producto =>{
-        const div = document.createElement('div');
-        div.innerHTML =`
-        <div class="producto-detalles">
-          <img width="200px" height="150px"class="prodcuto-imagen" src="${producto.imagen}">
-            <h3 class="producto-titulo">${producto.nombre}</h3>
-            <p class="producto-precio">$ ${producto.precio}</p>
-            <p class="producto-polularidad">${producto.popular}</p>
-            <button class="btd-add-product" id="${producto.nombre}" data-id='${producto.id}' data-nombre='${producto.nombre}' data-precio='${producto.precio}' data-imagen='${producto.imagen}' data-descripcion='${producto.descripcion}'>Agregar</button>
-        </div>`
-    divCatego.append(div)
-    });
-}
+  divCatego.innerHTML="";
+  productosElegidos.forEach(producto =>{
+  const div = document.createElement('div');
+  div.innerHTML =`
+  <div class="producto-detalles">
+  <img width="120px" height="90px"class="prodcuto-imagen" src="${producto.imagen}">
+      <h3 class="producto-titulo">${producto.nombre}</h3>
+      <div class="productos-btn">
+      <span class="producto-precio gradiente" >$ ${producto.precio}</span>
+      
+      <button class="btd-add-product" id="${producto.nombre}" data-id='${producto.id}' data-nombre='${producto.nombre}' data-precio='${producto.precio}' data-imagen='${producto.imagen}' data-descripcion='${producto.descripcion}'>Agregar</button>
+      </div>
+      
+  </div>`
+  divCatego.append(div);
+});}
+
 cargarProductos(ListadoDeProductos);
 
 btnCategorias.forEach(boton=>{
