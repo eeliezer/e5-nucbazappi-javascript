@@ -41,7 +41,7 @@ ListadoDeProductos = [
     nombre: "Palmitos", 
     ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Palmito"],
     precio: 850,
-    imagen:"./assets/img/Pizza-Muzzarella-300x300.png",
+    imagen:"./assets/img/Pizza-de-Palmitos--300x300.png",
     popular: 30,
     categoria: "pizzas",
     descripcion: "DESCRIPCION",
