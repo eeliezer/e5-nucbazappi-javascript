@@ -53,7 +53,7 @@ h4 {
 
 .navBar-list {
     margin: auto;
-    max-width: 1400px;
+    width: 1200px;
     height: 150px;
     background-color: var(--color1);
     display: flex;
@@ -82,7 +82,7 @@ h4 {
 }
 
 .div-section-user>ul {
-    width: 300px;
+    width: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,22 +96,30 @@ h4 {
     color: var(--color6);
 }
 
-.section-hero {
-    max-width: 1400px;
+.section-hero {  
+    margin: auto;
+    width: 1200px;
     height: 400px;
     display: flex;
     padding-top: 40px;
-    margin: auto;
+
 }
 .div-section-container{
+    gap: 10px;
     display: grid;
-    justify-items: stretch;
+   
+    grid-template-columns: 1fr 1fr;
+}
+.titulos-hero{
+    margin:30px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
 }
 
 
 
 .section-h2-hero {
-    margin: auto;
     width: 603px;
     height: 93px;
     top: 40px;
@@ -123,8 +131,6 @@ h4 {
 }
 
 .section-h4-hero {
-    position: relative;
-    margin: auto;
     width: 603px;
     height: 93px;
     top: 100px;
@@ -140,22 +146,23 @@ h4 {
     position: relative;
     width: 265px;
     height: 265px;
-    left: 1000px;
-    top: -178px;
+    
+    left: 120px;
+    top: 23px;
 }
 
-.div-img-pizza2 {
+.div-img-pizza2{
     background-image: url(../img/pizza\ 1.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     width: 341px;
     height: 354px;
-    left: 1119px;
-    top: -536px;
+    left: 227px;
+    top: -305px;
+    
 }
 .btd-add-product{
-    
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     border-radius: 17.5px;
@@ -168,7 +175,7 @@ h4 {
 }
 
 .btn-add-hero {
-    position: relative;
+    
     height: 40px;
     width: 150px;
     display: grid;
@@ -231,15 +238,16 @@ h4 {
 }
 
 .section-results{
-    position: relative;
     margin: auto;
-    max-width: 1400px;
-    height: 50px;
-    top: 93px;
+    width: 1200px;
     text-align: start;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.categorias > h4{
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 #populares-img{
     background-image: url("../img/pizza\ 2.png");
@@ -620,7 +628,6 @@ hr{
     height: auto;
     min-height: 150px;
     width: 100%;
-    position: absolute;
     bottom: 0;
     z-index: 1;
     display: grid;
