@@ -36,6 +36,7 @@ const cargarProductos= (productosElegidos)=> {
   divCatego.innerHTML="";
   productosElegidos.forEach(producto =>{
   const div = document.createElement('div');
+  div.classList.add('productoContenedor')
   div.innerHTML =`
   <div class="producto-detalles">
   <img width="120px" height="90px"class="prodcuto-imagen" src="${producto.imagen}">
