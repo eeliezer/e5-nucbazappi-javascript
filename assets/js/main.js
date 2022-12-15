@@ -39,8 +39,9 @@ const cargarProductos= (productosElegidos)=> {
   div.classList.add('productoContenedor')
   div.innerHTML =`
   <div class="producto-detalles">
-  <img width="120px" height="90px"class="prodcuto-imagen" src="${producto.imagen}">
+  <img width="120px" height="90px"class="producto-imagen" src="${producto.imagen}">
       <h3 class="producto-titulo">${producto.nombre}</h3>
+      <p class="producto-description">${producto.descripcion}</p>
       <div class="productos-btn">
       <span class="producto-precio gradiente" >$ ${producto.precio}</span>
       
@@ -104,9 +105,8 @@ const renderCartProduct = cartProduct => {
   <img src=${imagen} alt="Imagen del producto" />
   <div class="item-info">
     <h3 class="item-title">${nombre}</h3>
-    <h3 class="item-descripcion">${descripcion}</h3>
-    <p class="item-price">Precio: </p>
-    <span class="item-price">$${precio}</span>
+    <h3 class="item-description">${descripcion}</h3>
+    <span class="item-price gradiente">$${precio}</span>
   </div>
   <div class="item-handler">
     <span class="quantity-handler down" data-id=${id}>-</span>

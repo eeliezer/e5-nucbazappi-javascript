@@ -7,7 +7,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Muzzarella-300x300.png",
     popular: 100,
     categoria: "pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "La Segura",
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ ListadoDeProductos = [
     precio: 1000,
     popular:45,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "La que desaparece",
   },{
     id: 3,
     nombre: "Jamón y Morrón",
@@ -26,7 +26,7 @@ ListadoDeProductos = [
     imagen: "./assets/img/Pizza-de-Jamón-y-Morrón--300x300.png",
     popular: 90,
     categoria: "pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Un clasico",
   },{
     id: 4,  
     nombre:"Jamón y Tomate",
@@ -35,16 +35,16 @@ ListadoDeProductos = [
     imagen: "./assets/img/Pizza-de-Jamón-y-Tomate--300x300.png",
     popular: 50,
     categoria: "pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "No puede faltar",
   },{
     id: 5,
     nombre: "Palmitos", 
     ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Palmito"],
     precio: 850,
-    imagen:"./assets/img/Pizza-Muzzarella-300x300.png",
+    imagen:"./assets/img/Pizza-de-Palmitos--300x300.png",
     popular: 30,
     categoria: "pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "No es para cualquiera",
   },{
     id:6,
     nombre: "Fugazzeta",
@@ -53,16 +53,16 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Fugazzeta--300x300.png",
     popular: 85,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Ind. Argentina",
   },{
     id: 7,
-    nombre: "Pizza Napolitana",
+    nombre: "Napolitana",
     ingredientes:["Salsa de Tomate", "Queso Muzzarella", "Aceitunas", "Tomates"],
     precio: 800, 
     imagen:"./assets/img/Pizza-Napolitana--300x300.png",
     popular: 100,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "La especialidad de la casa",
   },{
     id:8,
     nombre: "Panceta",
@@ -71,7 +71,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Panceta--300x300.png",
     popular:95,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Bien Yankee",
   },{
     id:9,
     nombre:"Roquefort",
@@ -80,7 +80,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Roquefort--300x300.png",
     popular:70,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Solo para expertos",
   },{
     id:10,
     nombre:"Provolone",
@@ -89,7 +89,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Provolone-300x300.png",
     popular:60,
     categoria:"pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "La clasica v.2",
   },{
     id:11,
     nombre: "Super Calabresa",
@@ -98,7 +98,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Pizza-Super-Calabresa--300x300.png",
     popular: 80,
     categoria: "pizzas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Muucha calabresa",
   },{
     id:12,
     nombre:"Hamburguesas de Carne",
@@ -107,7 +107,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Hamburguesa-de-Carne--1104x704.jpg",
     popular:92,
     categoria:"hamburguesas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Un clasico",
   },{
     id:13,
     nombre:"Hamburguesas de Pollo",
@@ -116,7 +116,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Hamburguesa-de-Pollo--688x493.jpg",
     popular:90,
     categoria: "hamburguesas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Muy buena!",
   },{
     id:14,
     nombre:"Hamburguesas de Vegana",
@@ -125,16 +125,16 @@ ListadoDeProductos = [
     imagen:"./assets/img/Hamburguesa-Vegana--750x497.jpg",
     popular:81,
     categoria:"hamburguesas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Tenemos opcion Veggie!",
   },{
     id:15,
-    nombre:"Papas fritas",
+    nombre:"Papas Fritas",
     ingredientes:["papas"],
     precio:400,
     imagen:"./assets/img/Papas-Fritas--232x300.jpg",
     popular:100,
     categoria:"papas",
-    descripcion: "DESCRIPCION",
+    descripcion: "Nunca fallan!",
   },{
     id:16,
     nombre: "Wraps de Carne",
@@ -143,7 +143,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Wrap-de-Carne--600x600.jpg",
     popular:75,
     categoria: "wraps",
-    descripcion: "DESCRIPCION",
+    descripcion: "Una BOMBA!",
   },{
     id:17,
     nombre:"Wraps de Pollo",
@@ -152,7 +152,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Wrap-de-Pollo--750x346.jpg",
     popular:62,
     categoria:"wraps",
-    descripcion: "DESCRIPCION",
+    descripcion: "Increible",
   },{
     id:18,
     nombre:"Tamales",
@@ -160,8 +160,8 @@ ListadoDeProductos = [
     precio:990,
     imagen:"./assets/img/Tamales--500x375.jpg",
     popular:94,
-    categoria:"tamales",
-    descripcion: "DESCRIPCION",
+    categoria:"mexican-food",
+    descripcion: "Viva Mexico wey!!",
   },{
     id:20,
     nombre:"Batido de Banana",
@@ -170,7 +170,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Batido-de-Banana--1194x674.jpg",
     popular:93,
     categoria:"batidos",
-    descripcion: "DESCRIPCION",
+    descripcion: "El tipico",
   },{
     id:21,
     nombre:"Batido de Frutilla",
@@ -179,7 +179,7 @@ ListadoDeProductos = [
     imagen:"./assets/img/Batido-de-Frutilla--600x450.jpg",
     popular:93,
     categoria:"batidos",
-    descripcion: "DESCRIPCION",
+    descripcion: "Vale convidar!",
 
   },{
     id:22,
@@ -189,6 +189,6 @@ ListadoDeProductos = [
     imagen:"./assets/img/Batido-de-Uva--1000x664.jpg",
     popular:77,
     categoria:"batidos",
-    descripcion: "DESCRIPCION",
+    descripcion: "Raro pero excelente",
   },
 ]
